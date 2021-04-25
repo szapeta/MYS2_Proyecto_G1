@@ -3,59 +3,86 @@ library(survival)
 library(fitdistrplus)
 library(rriskDistributions)
 library(XLConnect)
-
-setwd("~/USAC/Modela 2/LAB/proyecto/MYS2_Proyecto_G1")
+#setwd("C:/Users/30201507/Desktop")
 
 buscarProb <- function(excelPath){
-
-  numCorrectas = 0
+  
   i = 1
-  notas <- loadWorkbook("[MYS2]OutputData_G1.xlsx")
+  notas <- loadWorkbook(excelPath)
   
   while (i<192) 
   {
     print(paste0("Columna: #",i))
     lecturaCol = readWorksheet(notas, sheet = 'Processing Data', startCol = i, endCol = i)
-    vectorDatos = as.vector(t(lecturaCol))
-    contadorDistribuciones <- 1
-    while(contadorDistribuciones <= 7)  
-    {
-      
-      ajuste = switch (contadorDistribuciones,
-                       fitdist(vectorDatos,"norm"),
-                       fitdist(vectorDatos,"unif"),
-                       fitdist(vectorDatos,"t", start=list(df=2)),
-                       #fitdist(vectorDatos,"chisq"),
-                       fitdist(vectorDatos/100,"exp"),
-                       fitdist(vectorDatos/100,"gamma"),
-                       fitdist(vectorDatos,"weibull"),
-                       #fitdist(vectorDatos,"binom", ),
-                       fitdist(vectorDatos,"pois",method="mle"),
-                       #fitdist(vectorDatos,"geom"),
-                       #fitdist(vectorDatos,"hyper"),
-                       #fitdist(vectorDatos,"nbinom")
-      )
-      
-      out <- tryCatch(
-        {
-          resultado <- gofstat(ajuste)
-          if(!is.null(resultado$kstest)){
-            if(grepl("not rejected", resultado$kstest)){
-              print(paste0("Dist: #",contadorDistribuciones))
-              print(resultado$kstest)
-              contadorDistribuciones = 13
-              numCorrectas = numCorrectas + 1
+    
+    
+    
+    out <- tryCatch(
+      {
+        ajuste <- fitdist(as.vector(t(lecturaCol)), "unif")
+        prueba <- gofstat(ajuste)
+        if(length(prueba$kstest) & grepl("not rejected", prueba$kstest)){
+          print(i)
+          print("unif")
+        }else{
+          ajuste <- fitdist(as.vector(t(lecturaCol)), "norm")
+          prueba <- gofstat(ajuste)
+          if(length(prueba$kstest) & grepl("not rejected", prueba$kstest)){
+            print(i)
+            print("norm")
+          }else{
+            ajuste <- fitdist(as.vector(t(lecturaCol)), "weibull")
+            prueba <- gofstat(ajuste)
+            if(length(prueba$kstest) & grepl("not rejected", prueba$kstest)){
+              print(i)
+              print("weibull")
+            }else{
+              ajuste <- fitdist(as.vector(t(lecturaCol)), "gamma")
+              prueba <- gofstat(ajuste)
+              if(length(prueba$kstest) & grepl("not rejected", prueba$kstest)){
+                print(i)
+                print("gamma")
+              }else{
+                ajuste <- fitdist(as.vector(t(lecturaCol)), "geom")
+                prueba <- gofstat(ajuste)
+                if(length(prueba$kstest) & grepl("not rejected", prueba$kstest)){
+                  print(i)
+                  print("geom")
+                }else{
+                  ajuste <- fitdist(as.vector(t(lecturaCol)), "nbinom")
+                  prueba <- gofstat(ajuste)
+                  if(length(prueba$kstest) & grepl("not rejected", prueba$kstest)){
+                    print(i)
+                    print("nbinom")
+                  }else{
+                    ajuste <- fitdist(as.vector(t(lecturaCol)), "exp")
+                    prueba <- gofstat(ajuste)
+                    if(length(prueba$kstest) & grepl("not rejected", prueba$kstest)){
+                      print(i)
+                      print("exp")
+                    }else{
+                      ajuste <- fitdist(as.vector(t(lecturaCol)), "gamma")
+                      prueba <- gofstat(ajuste)
+                      if(length(prueba$kstest) & grepl("not rejected", prueba$kstest)){
+                        print(i)
+                        print("gamma")
+                      }
+                    }
+                  }
+                }
+              }
             }
           }
-          
         }
-      )
-      
-      contadorDistribuciones = contadorDistribuciones + 1  
+      },
+      error=function(cond) {
         
-    }
-  
-     i = i + 1
+        return(NA)
+      }
+      
+      
+    )    
+    i = i + 1
   }
   
   print(paste0("Correctas: ",numCorrectas))
@@ -63,6 +90,3 @@ buscarProb <- function(excelPath){
 }
 
 buscarProb("[MYS2]OutputData_G1.xlsx")
-
-
-
