@@ -1,7 +1,9 @@
-#Grupo 1
+# Grupo 1
 
-##Integrantes
+## Integrantes
 
-200418310 Jose Aguilar
-200715274 Sergio Mynor David Felipe Zapeta
-200915305 Sergio Alfonso Ferrer Garcia
+* 200418310 Jose Aguilar
+* 200715274 Sergio Mynor David Felipe Zapeta
+* 200915305 Sergio Alfonso Ferrer Garcia
+
+# Documentacion
