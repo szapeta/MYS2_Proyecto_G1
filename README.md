@@ -19,7 +19,8 @@
 ![](https://raw.githubusercontent.com/szapeta/MYS2_Proyecto_G1/main/img/modelo.jpg)
 
 ### Explicación de configuraciones
-
+Proceso de ventas
+![](https://raw.githubusercontent.com/szapeta/MYS2_Proyecto_G1/main/img/ventas01.jpg)
 
 ### Conclusiones
 
