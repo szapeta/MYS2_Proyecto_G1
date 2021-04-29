@@ -88,6 +88,8 @@ Servidor Attach_BP_1: Adjuntar el panel al estante.
 #### Resumen Ejecutivo
 [Mostrar resumen](https://raw.githubusercontent.com/szapeta/MYS2_Proyecto_G1/main/[MYS2]ResumenEjecutivo_G1.pdf)
 
+[Mostrar apendice](https://github.com/szapeta/MYS2_Proyecto_G1/blob/main/docs/%5BMYS2%5DApendice_G1.pdf)
+
 #### Presentacion en video del resumen ejecutivo
 [Ir a video](https://www.youtube.com/watch?v=KCxTQ6isnYM)
 
