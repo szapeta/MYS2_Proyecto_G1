@@ -20,16 +20,21 @@
 
 ### Explicación de configuraciones
 Proceso de ventas
+
 ![](https://raw.githubusercontent.com/szapeta/MYS2_Proyecto_G1/main/img/ventas01.jpg)
 
 ### Conclusiones
 
 ## Fase 3 
 
-Presentacion en video de los integrantes
-(https://youtu.be/vJTDCGPwoQs)
+#### Resumen Ejecutivo
+[Mostrar resumen](https://raw.githubusercontent.com/szapeta/MYS2_Proyecto_G1/main/docs/resume.pdf)
 
-Informacion de los integrantes
+#### Presentacion en video de los integrantes
+[Ir a video](https://youtu.be/vJTDCGPwoQs)
+
+#### Informacion de los integrantes
+
 ![](https://raw.githubusercontent.com/szapeta/MYS2_Proyecto_G1/main/img/i01.jpg)
 * 200418310 Jose Aguilar
 
