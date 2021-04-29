@@ -37,7 +37,7 @@ Servidor SA_Assemble_1	Ensamblaje de las Piezas.
 		 SA_Assemble_2	
 ![](https://raw.githubusercontent.com/szapeta/MYS2_Proyecto_G1/main/img/ShelfAC.JPG)
 
-#Frame Assembly Cell
+# Frame Assembly Cell
 Servidor FA_Cut_1:	Corta en Piezas la madera.
 		 FA_Cut_2:
 Servidor FA_Drill_1	Perforan las Piezas.
@@ -48,7 +48,7 @@ Combiner Combiner1:	Adjunta las piezas de la Celda 1 y 2.
 		 Combiner2:
 ![](https://raw.githubusercontent.com/szapeta/MYS2_Proyecto_G1/main/img/FrameAC.JPG)
 
-#Back Panel Cell
+# Back Panel Cell
 Servidor BP_Cut_1:		Corta en Piezas la madera.
 Servidor BP_Drill_1:	Perforan las Piezas.
 		 PB_Drill_2		
@@ -60,7 +60,7 @@ Servidor BP_Paint_1	Pintado de las piezas.
 Servidor Server32:		Envio del estante a la fase final.
 ![](https://raw.githubusercontent.com/szapeta/MYS2_Proyecto_G1/main/img/BackPC.JPG)
 
-#Final Assembly Cell
+# Final Assembly Cell
 Servidor Assemble_1:	Ensamblaje Final.
 		 Assemble_2
 		 Assemble_2
