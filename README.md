@@ -30,6 +30,9 @@ Proceso de ventas
 #### Resumen Ejecutivo
 [Mostrar resumen](https://raw.githubusercontent.com/szapeta/MYS2_Proyecto_G1/main/docs/resume.pdf)
 
+#### Presentacion en video del resumen ejecutivo
+[Ir a video](https://www.youtube.com/watch?v=KCxTQ6isnYM)
+
 #### Presentacion en video de los integrantes
 [Ir a video](https://youtu.be/vJTDCGPwoQs)
 
@@ -43,3 +46,5 @@ Proceso de ventas
 
 ![](https://raw.githubusercontent.com/szapeta/MYS2_Proyecto_G1/main/img/i02.jpg)
 * 200915305 Sergio Alfonso Ferrer Garcia
+
+(https://www.youtube.com/watch?v=KCxTQ6isnYM)
