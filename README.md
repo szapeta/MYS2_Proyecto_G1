@@ -35,7 +35,7 @@ Servidor SA_Drill_1	Perforan las Piezas.
 		 SA_Drill_3
 Servidor SA_Assemble_1	Ensamblaje de las Piezas.
 		 SA_Assemble_2	
-![](https://raw.githubusercontent.com/szapeta/MYS2_Proyecto_G1/main/img/ShelfAC.jpg)
+![](https://raw.githubusercontent.com/szapeta/MYS2_Proyecto_G1/main/img/ShelfAC.JPG)
 
 #Frame Assembly Cell
 Servidor FA_Cut_1:	Corta en Piezas la madera.
@@ -46,7 +46,7 @@ Servidor FA_Drill_1	Perforan las Piezas.
 Servidor FA_Assemble_1	Ensamblaje de las Piezas.
 Combiner Combiner1:	Adjunta las piezas de la Celda 1 y 2.
 		 Combiner2:
-![](https://raw.githubusercontent.com/szapeta/MYS2_Proyecto_G1/main/img/FrameAC.jpg)
+![](https://raw.githubusercontent.com/szapeta/MYS2_Proyecto_G1/main/img/FrameAC.JPG)
 
 #Back Panel Cell
 Servidor BP_Cut_1:		Corta en Piezas la madera.
@@ -58,7 +58,7 @@ Servidor BP_Sand_1:	Lijado de las piezas.
 Servidor BP_Paint_1	Pintado de las piezas.
 		 BP_Paint_2
 Servidor Server32:		Envio del estante a la fase final.
-![](https://raw.githubusercontent.com/szapeta/MYS2_Proyecto_G1/main/img/BackPC.jpg)
+![](https://raw.githubusercontent.com/szapeta/MYS2_Proyecto_G1/main/img/BackPC.JPG)
 
 #Final Assembly Cell
 Servidor Assemble_1:	Ensamblaje Final.
@@ -72,7 +72,7 @@ Servidor Paint_1:		Pintura Final.
 		 Paint_2:
 		 Paint_3:
 Servidor Attach_BP_1: Adjuntar el panel al estante.
-![](https://raw.githubusercontent.com/szapeta/MYS2_Proyecto_G1/main/img/FinalAC.jpg)
+![](https://raw.githubusercontent.com/szapeta/MYS2_Proyecto_G1/main/img/FinalAC.JPG)
 
 ### Conclusiones
 * Se recomiendo realizar una línea de producción idéntica para cada tipo de estante, las variantes en el proceso es el tamaño del estante por lo que la configuración de la maquinara se debe de realizar en la estación de corte, perforado y atornillado. Una vez realizada esta configuración en la línea de producción, se debe de añadir más maquinaria en las estaciones de ensamblaje, reducir las colas y aumentar producción.
