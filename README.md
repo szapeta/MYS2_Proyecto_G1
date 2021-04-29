@@ -19,9 +19,18 @@
 ![](https://raw.githubusercontent.com/szapeta/MYS2_Proyecto_G1/main/img/modelo02.jpg)
 
 ### Explicación de configuraciones
+
+#### Configuracion de horarios
+Se ha configurado un horario laboral de lunes a viernes, con una jornada de 7 horas al dia, de 9:00AM a 5:00PM
+con una hora de almnuerzo de 12:00PM a 1:00PM
+
+![](https://raw.githubusercontent.com/szapeta/MYS2_Proyecto_G1/main/img/horariolab01.jpg)
+
+
 #### Proceso de ventas
 
 En esta seccion, hemos configurado un secuencia para la lectura del archivo de excel, el cual hace uso del proceso llamado lectura ventas
+
 ![](https://raw.githubusercontent.com/szapeta/MYS2_Proyecto_G1/main/img/ventas02.jpg)
 
 
